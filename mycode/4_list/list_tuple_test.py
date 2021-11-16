@@ -19,9 +19,7 @@ print(my_list1)
 print(my_list1[0:3]) # 0,1,2 출력 (문자열과 동일)
 
 # set : 중복 허용하지 않기 (but list에서 변환 시 순서가 유지되지 않음)
-# set은 중괄호
 my_set1 = set(my_list1)
-my_set2 = {}
 print(my_set1)
 
 # tuple은 read only 타입으로 변경 불가 (최초에 세팅 가능) / 속도가 빠름
@@ -45,3 +43,20 @@ def swap(a,b):
 a,b= swap(10,20)
 print(a)
 print(b)
+
+# 문자열 타입 list 생성
+cat_list = list('cat')
+print(cat_list) # ['c', 'a', 't']
+
+# 문자열 split 후 리스트에 저장
+birth_day = "2021/11/16"
+birth_list = birth_day.split('/')
+print(birth_list)
+
+# 값 포함하고 있는지 없는지
+print('2021' in birth_list)
+print('2021' not in birth_list)
+
+if '2021' not in birth_list:
+    print('not found')
+
